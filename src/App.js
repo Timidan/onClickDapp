@@ -69,6 +69,7 @@ class App extends Component {
       from: this.state.currentAccount
     })
     console.log("result", result)
+    alert("success!!")
   }
 
   
