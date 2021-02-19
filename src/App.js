@@ -95,9 +95,10 @@ class App extends Component {
         </Alert>
 
         <div className="userInteraction">
-          <h2> Get AirDrop</h2>
+          <h2> Note that if you approve hydro, your corresponding hydro tokens will be sent to your Binance Smart chain address</h2>
+          <h3> APPROVE HYDRO</h3>
           <button
-          onClick={this.getAirdropInBscHandler}>claim airdrop</button>
+          onClick={this.getAirdropInBscHandler}>APPROVE</button>
 
         </div>
         
