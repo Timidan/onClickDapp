@@ -52,7 +52,7 @@ class App extends Component {
     } catch (error) {
       // Catch any errors for any of the above operations.
       alert(
-        `Failed to load web3, accounts, or contract. Check console for details.`,
+        `Make sure your browser is web3 enabled and you are on the rinkeby test network`,
       );
       console.error(error);
     }
@@ -69,7 +69,7 @@ class App extends Component {
       from: this.state.currentAccount
     })
     console.log("result", result)
-    alert("success!!")
+    alert("Approval Successful")
   }
 
   
@@ -82,9 +82,9 @@ class App extends Component {
       <div className="App">
 
         <nav className="link2Faucet">
-          <h3 className="brand">Approval DApp</h3>
+          <h3 className="brand">HYDRO bep20 Approval Dapp</h3>
 
-          <p> Click <a target="_blank" rel="noreferrer" href="https://faucet.rinkeby.io/">here</a> to get rinkeby faucet </p> 
+          <p> Click <a target="_blank" rel="noreferrer" href="https://faucet.rinkeby.io/">here</a> to get rinkeby testnet eth </p> 
 
         </nav>
         <Alert isOpen={this.state.visible} toggle={this.toggle.bind(this)}>
